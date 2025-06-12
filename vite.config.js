@@ -11,10 +11,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: "/portfolio",
   server: {
-    host: true,
-    port: 5173,
-    allowedHosts: ['.ngrok-free.app'],
+    open: true,
+    port: 3001,
   },
 })
 
