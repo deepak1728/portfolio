@@ -11,7 +11,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/portfolio",
+  base: "/",
   server: {
     open: true,
     port: 3001,
