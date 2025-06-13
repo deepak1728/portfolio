@@ -1,20 +1,20 @@
 import Typewriter from 'typewriter-effect'
 import myImage from '../test.png'
-import { FaGithub, FaLinkedin, FaFileAlt  } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa"
 import { SiLeetcode } from "react-icons/si"
-
 
 const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen pt-40 px-4 md:px-10 bg-gradient-to-b from-sky-100 to-white flex flex-col md:flex-row items-center justify-center gap-10"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-between gap-12 px-6 md:px-16 py-20 bg-gradient-to-b from-sky-100 to-white"
     >
-      <div className="text-center md:text-left md:mt-[-300px]">
-        <h1 className="text-4xl md:text-5xl font-bold text-black">Hi, I am Deepak</h1>
-        {/* <h1 className="mt-4 text-4xl md:text-5xl font-bold text-blue-800">I'm a Full Stack Developer</h1> */}
+      <div className="flex-1 text-center md:text-left">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+          Hi, I’m Deepak <span className="inline-block animate-wave">👋</span>
+        </h1>
 
-        <div className="mt-4  md:text-xl font-bold text-black min-w-0">
+        <div className="text-xl font-semibold text-gray-800 h-[32px] mb-2">
           <Typewriter
             options={{
               autoStart: true,
@@ -39,59 +39,58 @@ const Home = () => {
                 .typeString("DSA Enthusiast")
                 .pauseFor(2000)
                 .deleteAll()
-                .pauseFor(1000)
                 .start();
             }}
           />
-          <p className="text-base md:text-xl text-blue-1000 mt-2 font-medium">
-               Building elegant solutions to complex problems with modern technologies.
-          </p>
+        </div>
 
-          <div className="mt-6 flex justify-center md:justify-start gap-x-10">
-            <a
-              href="https://github.com/deepak1728"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="text-black w-8 h-12" />
-              
-            </a>
+        <p className="text-gray-700 text-base md:text-lg mb-6 max-w-xl mx-auto md:mx-0">
+          Building elegant solutions to complex problems with modern technologies.
+        </p>
 
-            <a
-              href="https://linkedin.com/in/deepak-matta/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="text-blue w-8 h-12" />
-              
-            </a>
-            
-            <a
-              href="https://leetcode.com/u/deepak1728/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiLeetcode className="text-black w-10 h-12" />
-              
-            </a>
-            
-{/* 
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a> */}
-          </div>
+        <div className="flex justify-center md:justify-start gap-6 mt-6 flex-wrap">
+          <a
+            href="https://github.com/deepak1728"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-900 transition"
+          >
+            <FaGithub className="text-black w-8 h-12" />
+          </a>
+          <a
+            href="https://linkedin.com/in/deepak-matta/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition"
+          >
+            <FaLinkedin className="text-blue w-8 h-12" />
+          </a>
+          <a
+            href="https://leetcode.com/u/deepak1728/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-orange-500 transition"
+          >
+            <SiLeetcode className="text-black w-10 h-12" />
+          </a>
+<a
+  href="/Deepak_Matta_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-blue-700 !text-white"
+>
+  Resume
+</a>
         </div>
       </div>
 
-      <img
-        src={myImage}
-        alt="Deepak"
-        className="w-full max-w-xs md:max-w-md object-contain shadow-xl md:mt-[-300px]"
-      />
+      <div className="flex-1 flex justify-center">
+        <img
+          src={myImage}
+          alt="Deepak"
+          className="w-full max-w-[500px] object-contain rounded-xl shadow-2xl"
+        />
+      </div>
     </section>
   );
 };
