@@ -16,10 +16,10 @@ const Header = () => {
   const navItems = ["home", "about", "projects", "contact"];
 
   const getButtonClass = (id) =>
-    `text-base font-semibold px-3 py-2 rounded transition bg-white text-black ${
+    `text-base font-semibold  ${
       activeSection === id
         ? "!bg-blue-700 text-white"
-        : "hover:!bg-blue-700 hover:!text-white"
+        : "!bg-white text-black hover:!bg-blue-700 hover:!text-white"
     }`;
 
   return (
