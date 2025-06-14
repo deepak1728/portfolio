@@ -73,14 +73,14 @@ const Home = () => {
           >
             <SiLeetcode className="text-black w-10 h-12" />
           </a>
-<a
-  href="/Deepak_Matta_Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="inline-flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-blue-700 !text-white"
->
-  Resume
-</a>
+          <a
+            href="/Deepak_Matta_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-blue-700 !text-white"
+          >
+            Resume
+          </a>
         </div>
       </div>
 
