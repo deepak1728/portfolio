@@ -2,22 +2,29 @@ import Deepak from "../Deepak.JPG";
 import {
   SiReact, SiJavascript, SiTypescript, SiTailwindcss,
   SiMongodb, SiHtml5, SiCss3, SiGit,
-  SiBootstrap, SiMysql, SiPostman, SiC
+  SiBootstrap, SiMysql, SiPostman, SiPython,SiGo, SiDocker, SiKubernetes, SiTerraform, SiCloudflare
 } from "react-icons/si";
+import { BiLogoAws } from "react-icons/bi";
 
 const techStack = [
-  { icon: <SiC color="#A8B9CC" />, label: "C Language" },
-  { icon: <SiTypescript color="#3178C6" />, label: "TypeScript" },
-  { icon: <SiPostman color="#FF6C37" />, label: "Postman" },
+  { icon: <SiGo color="#00ADD8" />, label: "Golang" },
+  { icon: <SiPython color="#3776AB" />, label: "Python" },
   { icon: <SiHtml5 color="#E34F26" />, label: "HTML" },
   { icon: <SiCss3 color="#1572B6" />, label: "CSS" },
   { icon: <SiBootstrap color="#7952B3" />, label: "Bootstrap" },
   { icon: <SiJavascript color="#F7DF1E" />, label: "Javascript" },
   { icon: <SiTailwindcss color="#06B6D4" />, label: "Tailwind CSS" },
   { icon: <SiReact color="#61DAFB" />, label: "React" },
+  { icon: <SiTypescript color="#3178C6" />, label: "TypeScript" },
   { icon: <SiMysql color="#00758F" />, label: "MySQL" },
   { icon: <SiMongodb color="#47A248" />, label: "Mongo DB" },
   { icon: <SiGit color="#F05032" />, label: "Git" },
+  { icon: <SiDocker color="#2496ED" />, label: "Docker" },
+  { icon: <SiKubernetes color="#326CE5" />, label: "Kubernetes" },
+  { icon: <SiTerraform color="#623CE4" />, label: "Terraform" },
+  { icon: <SiCloudflare color="#F38020" />, label: "Cloudflare" },
+  { icon: <BiLogoAws color="#FF9900" />, label: "AWS" },
+  { icon: <SiPostman color="#FF6C37" />, label: "Postman" },
 ];
 
 const About = () => {
@@ -27,11 +34,11 @@ const About = () => {
       className="min-h-screen py-20 bg-gradient-to-b from-white to-blue-100"
     >
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-20">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-20 relative">
           <img
             src={Deepak}
             alt="Deepak"
-            className="w-[220px] md:w-[280px] object-contain rounded-xl shadow-2xl"
+            className="w-[220px] md:w-[280px] object-contain rounded-xl shadow-2xl  md:ml-[-120px] md:mt-[30px]"
           />
           <div className="flex flex-col justify-center text-left space-y-4 text-gray-800 leading-relaxed text-lg">
             <h2 className="text-3xl font-bold text-blue-700 mb-4">About Me</h2>

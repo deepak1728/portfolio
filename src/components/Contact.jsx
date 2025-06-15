@@ -6,6 +6,7 @@ const Contact = () => {
     >
       <h1 className="text-5xl font-bold text-blue-500">Contact Section</h1>
     </section>
+    
   );
 };
 
