@@ -54,8 +54,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-700 mb-4">Technologies and Tools</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-blue-700 mb-4">Technologies and Tools</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             I build performant, user-focused web and mobile apps using a powerful combination of modern frameworks, tools, and design systems.
           </p>

@@ -95,3 +95,8 @@ body,
   transform-origin: 70% 70%;
   animation: wave 1.5s infinite;
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+  -webkit-text-fill-color: white !important;
+}
