@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+const Header = ({ activeSection, setActiveSection }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -16,7 +15,7 @@ const Header = () => {
   const navItems = ["home", "about", "projects", "contact"];
 
   const getButtonClass = (id) =>
-    `text-base font-semibold  ${
+    `text-base font-semibold px-4 py-2 rounded transition ${
       activeSection === id
         ? "!bg-blue-700 text-white"
         : "!bg-white text-black hover:!bg-blue-700 hover:!text-white"

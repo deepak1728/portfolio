@@ -1,7 +1,6 @@
-import Typewriter from 'typewriter-effect'
-import myImage from '../test.png'
-import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa"
-import { SiLeetcode } from "react-icons/si"
+import Typewriter from "typewriter-effect";
+import myImage from "../test.png";
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -45,7 +44,8 @@ const Home = () => {
         </div>
 
         <p className="text-gray-700 text-base md:text-lg mb-6 max-w-xl mx-auto text-center">
-          Building elegant solutions to complex problems with modern technologies.
+          Building elegant solutions to complex problems with modern
+          technologies.
         </p>
 
         <div className="flex justify-center gap-6 mt-6 flex-wrap">
